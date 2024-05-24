@@ -15,7 +15,7 @@
 
 - Association VLAN <> réseau IP 
 
-| VLAN              | VLAN 10 `client`    | VLAN 20 `serv`    | VLAN 30 `dir1`    |
+| VLAN              | VLAN 10 `client`    | VLAN 20 `serv`    | VLAN 30 `dhcp_ad` |
 | ----------------- | ------------------- | ----------------- | ----------------- |
 | Réseau IP associé | `10.33.10.0/23`     | `10.33.20.0/28`   | `10.30.30.0/27`   |
 
