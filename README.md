@@ -1,11 +1,6 @@
 # Projet Infra
 
-
 ## R.A.C.I.
-
-#### 1. Tableau d'adressage
-
-**- Site "Meow Origins" :**
 
 | Tâches   | Réalisateur | Approbateur | Consulté | Informé |
 | ------------------- | -------------- | -------------- | -------------- | -------------- |
