@@ -11,6 +11,80 @@
 
 ---
 
+
+## Plan de projet
+
+### 1. **Initiation du Projet**
+#### 1.1. Définition des objectifs
+- **But du projet** : Fournir une infrastructure informatique minimale dans le cloud pour une PME.
+- **Objectifs spécifiques** :
+  - Mise en place d'un serveur AD/DHCP avec 4 comptes utilisateurs.
+  - Création d'un serveur de fichiers avec une arborescence définie.
+  - Déploiement d'un serveur applicatif accessible en HTTPS.
+  - Installation et configuration de 4 postes clients Windows 10 ou 11.
+  - Mise en place d'un firewall pour la gestion de la sécurité réseau.
+
+### 2. **Planification**
+#### 2.1. Identification des jalons et des tâches
+- **Jalon 1 : Analyse des besoins**
+  - Collecte des exigences techniques et fonctionnelles.
+  - Analyse des contraintes et des ressources disponibles.
+
+- **Jalon 2 : Conception de l'infrastructure**
+  - Conception de l'architecture réseau.
+  - Élaboration de l'arborescence des dossiers.
+  - Planification de la sécurité réseau (firewall, VLAN).
+
+- **Jalon 3 : Mise en place de l'infrastructure**
+  - Création et configuration du serveur AD/DHCP.
+  - Installation du serveur de fichiers et création des dossiers.
+  - Déploiement du serveur applicatif et configuration de l'accès HTTPS.
+  - Configuration des postes clients Windows.
+  - Installation et configuration du firewall.
+  - Mise en place d'outils de surveillance et configuration des alertes pour les incidents.
+
+- **Jalon 4 : Tests et validation**
+  - Tests de fonctionnalité pour chaque composant.
+  - Validation de la sécurité et de la connectivité réseau.
+  - Validation de l'accès utilisateur et des permissions.
+
+- **Jalon 5 : Livraison et formation**
+  - Livraison de l'infrastructure au client.
+  - Formation des utilisateurs finaux et de l'administrateur IT de la PME.
+  - Documentation complète de l'infrastructure et des procédures de maintenance.
+
+### 3. **Exécution**
+#### 3.1. Mise en œuvre des tâches
+- **Installation et configuration** :
+  - Utilisation d'une plateforme cloud (PNetLab) pour héberger les serveurs.
+  - Déploiement des serveurs AD/DHCP, fichiers, applicatif.
+  - Configuration des postes clients.
+  - Mise en place et configuration du firewall avec les règles de sécurité définies.
+  - Mise en place d'outils de surveillance et configuration des alertes pour les incidents.
+
+### 4. **Clôture du Projet**
+
+
+#### 4.1. Documentation et transfert
+- **Documentation** :
+  - Rédaction de la documentation technique détaillée.
+  - Guide utilisateur pour les employés de la PME.
+
+- **Formation** :
+  - Session de formation pour l'administrateur IT et les utilisateurs finaux.
+
+#### 4.2 Livraison et Validation
+- **Vérification finale** :
+  - Validation de tous les composants et services déployés.
+  - Exécution des tests finaux avec la PME.
+- **Livraison de l'infrastructure** :
+  - Transfert officiel de l'infrastructure.
+  - Signature de l'acceptation par la PME.
+
+
+---
+
+
 ## Tableau des VLANs
 
 - Association VLAN <> réseau IP 
