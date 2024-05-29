@@ -1,6 +1,6 @@
-# Projet Infra
+# Projet Infra :
 
-## R.A.C.I.
+## R.A.C.I. :
 
 | Tâches   | Réalisateur | Approbateur | Consulté | Informé |
 | ------------------- | -------------- | -------------- | -------------- | -------------- |
@@ -11,8 +11,7 @@
 
 ---
 
-
-## Plan de projet
+## Plan de projet :
 
 ### 1. **Initiation du Projet**
 #### 1.1. Définition des objectifs
@@ -82,10 +81,11 @@
   - Signature de l'acceptation par la PME.
 
 
----
+## Topilogie :
 
+![Topilogie](./img/topologie.png)
 
-## Tableau des VLANs
+## Tableau des VLANs :
 
 - Association VLAN <> réseau IP 
 
@@ -95,7 +95,7 @@
 
 ---
 
-## Tableau d'adressage
+## Tableau d'adressage :
 
 | Machine - Réseau  | `10.33.10.0/24` | `10.33.20.0/28` | `10.33.30.0/29` |
 | ----------------- | --------------- | --------------- | --------------- |
