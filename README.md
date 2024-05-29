@@ -62,8 +62,6 @@
   - Mise en place d'outils de surveillance et configuration des alertes pour les incidents.
 
 ### 4. **Clôture du Projet**
-
-
 #### 4.1. Documentation et transfert
 - **Documentation** :
   - Rédaction de la documentation technique détaillée.
