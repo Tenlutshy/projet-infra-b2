@@ -25,29 +25,30 @@
 
 ### 2. **Planification**
 #### 2.1. Identification des jalons et des tâches
-- **Jalon 1 : Analyse des besoins**
+- **Analyse des besoins**
   - Collecte des exigences techniques et fonctionnelles.
   - Analyse des contraintes et des ressources disponibles.
 
-- **Jalon 2 : Conception de l'infrastructure**
+- **Conception de l'infrastructure**
   - Conception de l'architecture réseau.
   - Élaboration de l'arborescence des dossiers.
   - Planification de la sécurité réseau (firewall, VLAN).
 
-- **Jalon 3 : Mise en place de l'infrastructure**
-  - Création et configuration du serveur AD/DHCP.
-  - Installation du serveur de fichiers et création des dossiers.
-  - Déploiement du serveur applicatif et configuration de l'accès HTTPS.
-  - Configuration des postes clients Windows.
-  - Installation et configuration du firewall.
-  - Mise en place d'outils de surveillance et configuration des alertes pour les incidents.
+- **Mise en place de l'infrastructure**
 
-- **Jalon 4 : Tests et validation**
+  - Jalon 1 : Création et configuration du serveur AD/DHCP.
+  - Jalon 2 : Installation du serveur de fichiers et création des dossiers.
+  - Jalon 3 : Déploiement du serveur applicatif et configuration de l'accès HTTPS.
+  - Jalon 4 : Configuration des postes clients Windows.
+  - Jalon 5 : Installation et configuration du firewall.
+  - Jalon 6 : Mise en place d'outils de surveillance et configuration des alertes pour les incidents.
+
+- **Tests et validation**
   - Tests de fonctionnalité pour chaque composant.
   - Validation de la sécurité et de la connectivité réseau.
   - Validation de l'accès utilisateur et des permissions.
 
-- **Jalon 5 : Livraison et formation**
+- **Livraison et formation**
   - Livraison de l'infrastructure au client.
   - Formation des utilisateurs finaux et de l'administrateur IT de la PME.
   - Documentation complète de l'infrastructure et des procédures de maintenance.
