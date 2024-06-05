@@ -6,7 +6,7 @@
 #   see dhcpd.conf(5) man page
 # create new
 # specify domain name
-option domain-name     "srv.world";
+option domain-name     "boo.boo";
 # specify DNS server's hostname or IP address
 option domain-name-servers     1.1.1.1;
 # default lease time
