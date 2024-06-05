@@ -33,9 +33,10 @@ interface GigabitEthernet5
 no shut
 id address dhcp
 
-------------------
 
 # Configuration des interfaces
+
+-------------------
 
 interface GigabitEthernet6.10
 encapsulation dot1Q
