@@ -1,3 +1,6 @@
+### DHCP
+
+```bash
 # DHCP Server Configuration file.
 #   see /usr/share/doc/dhcp-server/dhcpd.conf.example
 #   see dhcpd.conf(5) man page
@@ -34,3 +37,4 @@ subnet 10.33.30.0 netmask 255.255.255.248 {
     option broadcast-address 10.33.30.7;
     option routers 10.33.30.6;
 }
+```
