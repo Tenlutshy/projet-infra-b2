@@ -1,5 +1,12 @@
 # Projet Infra :
 
+## Sommaire :
+### [Configuration réseau](./Conf)
+
+- [Configuration router](./Conf/conf_router.md)
+- [Configuration switch](./Conf/conf_switch.md)
+- [Configuration DHCP](./Conf/conf_dhcp.md)
+
 ## R.A.C.I. :
 
 | Tâches   | Réalisateur | Approbateur | Consulté | Informé |
