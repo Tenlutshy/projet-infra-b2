@@ -37,5 +37,4 @@ interface Ethernet2/8
   switchport
   switchport access vlan 10
 
-interface Ethernet2/9
 ```
