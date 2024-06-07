@@ -1,4 +1,4 @@
-### Switch
+### Switch (Cisco IOL ->i86bi_linux_I2)
 
 ```bash
 #Configuration des interfaces
