@@ -140,9 +140,9 @@
 - 🏠 GDL-Commercial-R
 - 🏠 GDL-Commercial-W
     
-🌐 GG-Jesaisplusquoi</br>
-- 🏠 GDL-re-R
-- 🏠 GDL-re-W
+🌐 GG-Administratif</br>
+- 🏠 GDL-Administratif-R
+- 🏠 GDL-Administratif-W
 
 ### Utilisateurs
 
@@ -155,6 +155,6 @@
 | 🖥️ | admin | Boo1234 | Système |
 | 🖥️ | srvfichier | Boo1234 | Système |
 | 🧑 | elchef | Boo1234 | Direction |
-| 🧑 | el??  | Boo1234 | ?? |
+| 🧑 | eladmin  | Boo1234 | Administratif |
 | 🧑 | elcom | Boo1234 | Commercial |
 | 🧑 | elsec | Boo1234 | Secretariat |
