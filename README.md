@@ -1,6 +1,7 @@
 # Projet Infra :
 
 ## Sommaire :
+
 ### [Configuration réseau](./Conf)
 
 - [Configuration router](./Conf/conf_router.md)
@@ -112,3 +113,48 @@
 | `PC.CL2`          | `10.33.10.2`     | ❌             | ❌             |
 | `PC.CL3`          | `10.33.10.3`     | ❌             | ❌             |
 | `PC.CL4`          | `10.33.10.4`     | ❌             | ❌             |
+
+
+
+
+## Configuration ADDC
+
+### Groupes
+
+*🌐 Groupes de domaine globaux
+🏠 Groupes de domaine Locaux
+🖥️ Groupes système*
+
+🖥️ Domain Admin </br>
+🖥️ Domaine Server</br>
+
+🌐 GG-Direction</br>
+- 🏠 GDL-Direction-R
+- 🏠 GDL-Direction-W
+    
+🌐 GG-Secretariat</br>
+- 🏠 GDL-Secretariat-R
+- 🏠 GDL-Secretariat-W
+    
+🌐 GG-Commercial</br>
+- 🏠 GDL-Commercial-R
+- 🏠 GDL-Commercial-W
+    
+🌐 GG-Jesaisplusquoi</br>
+- 🏠 GDL-re-R
+- 🏠 GDL-re-W
+
+### Utilisateurs
+
+*🖥️Utilisateurs système
+🧑 Utilisateurs humain*
+
+
+| Type  | Identifiant | Mot de passe | Groupe |
+| ----------------- | --------------- | --------------- | --------------- |
+| 🖥️ | admin | Boo1234 | Système |
+| 🖥️ | srvfichier | Boo1234 | Système |
+| 🧑 | elchef | Boo1234 | Direction |
+| 🧑 | el??  | Boo1234 | ?? |
+| 🧑 | elcom | Boo1234 | Commercial |
+| 🧑 | elsec | Boo1234 | Secretariat |
