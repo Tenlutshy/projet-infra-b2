@@ -43,12 +43,13 @@
   - Planification de la sécurité réseau (firewall, VLAN).
 
 - **Mise en place de l'infrastructure**
-  - Jalon 1 :Création et configuration du serveur AD/DHCP.
+  - Jalon 1 : Création et configuration du serveur AD/DHCP.
   - Jalon 2 : Installation du serveur de fichiers et création des dossiers.
-  - Jalon 3  : Déploiement du serveur applicatif et configuration de l'accès HTTPS.
-  - Jalon 4 : Configuration des postes clients Windows.
-  - Jalon 5 : Installation et configuration du firewall.
-  - Jalon 6 : Mise en place d'outils de surveillance et configuration des alertes pour les incidents.
+  - Jalon 3 : Configuration des postes clients Windows.
+  - Jalon 4 : Installation et configuration du firewall.
+  - Jalon 5 : Mise en place d'outils de surveillance et configuration des alertes pour les incidents.
+  - Jalon 6 : Déploiement du serveur applicatif et configuration de l'accès HTTPS.
+
 
 - **Tests et validation**
   - Tests de fonctionnalité pour chaque composant.
