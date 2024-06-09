@@ -158,3 +158,26 @@
 | 🧑 | eladmin  | Boo1234 | Administratif |
 | 🧑 | elcom | Boo1234 | Commercial |
 | 🧑 | elsec | Boo1234 | Secretariat |
+
+## Configuration Firewall :
+
+*X trafic non autorisés
+O trafic autorisé *
+
+### Règles ports :
+
+| Port  | Entrant | Sortant | Règle |
+| ----------------- | --------------- | --------------- | ---------------|
+| 80 | X | O | autoriser le traffic HTTP |
+| 443 | X | O | autotriser le traffic HTTPS |
+| 22 | O | O | permettre une connexion ssh via clé rsa|
+| * | X | X | ports non nécessaire |
+
+### Règles génériques :
+
+- FIltrage MAC -> autoriser l'accès au wifi uniquement aux machines connues
+- Configuration d'un VPN -> permetttre une connexion à distance sécurisé
+- Monitoring + activation des logs -> visualiser et garder une trace des actions réalisées sur le réseau
+- Configuration des vlan -> restreindre et contrôler les accès entre vlan
+
+
