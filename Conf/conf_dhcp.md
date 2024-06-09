@@ -1,40 +1,66 @@
 ### DHCP
 
-```bash
-# DHCP Server Configuration file.
-#   see /usr/share/doc/dhcp-server/dhcpd.conf.example
-#   see dhcpd.conf(5) man page
-# create new
-# specify domain name
-option domain-name     "boo.boo";
-# specify DNS server's hostname or IP address
-option domain-name-servers     1.1.1.1;
-# default lease time
-default-lease-time 600;
-# max lease time
-max-lease-time 7200;
-# this DHCP server to be declared valid
-authoritative;
-# specify network address and subnetmask
+```powershell
+# Import the DHCP Server module
+Import-Module DHCPServer
 
-subnet 10.33.10.0 netmask 255.255.255.0 {
-    # specify the range of lease IP address
-    range dynamic-bootp 10.33.10.1 10.33.10.253;
-    # specify broadcast address
-    option broadcast-address 10.33.10.255;
-    # specify gateway
-    option routers 10.33.10.254;
+# Variables
+$DomainName = "boo.lan"
+$DNSServer = "10.33.10.1"
+$LeaseTime = 600 # Default lease time in seconds
+$MaxLeaseTime = 7200 # Max lease time in seconds
+
+# VLAN 10.33.10.0/24
+$Scope1 = @{
+    Name = "VLAN10.33.10.0"
+    Subnet = "10.33.10.0"
+    Mask = "255.255.255.0"
+    StartRange = "10.33.10.1"
+    EndRange = "10.33.10.253"
+    Router = "10.33.10.254"
+    Broadcast = "10.33.10.255"
 }
 
-subnet 10.33.20.0 netmask 255.255.255.240 {
-    range dynamic-bootp 10.33.10.1 10.6.3.13;
-    option broadcast-address 10.33.20.15;
-    option routers 10.33.20.14;
+# VLAN 10.33.20.0/28
+$Scope2 = @{
+    Name = "VLAN10.33.20.0"
+    Subnet = "10.33.20.0"
+    Mask = "255.255.255.240"
+    StartRange = "10.33.20.1"
+    EndRange = "10.33.20.13"
+    Router = "10.33.20.14"
+    Broadcast = "10.33.20.15"
 }
 
-subnet 10.33.30.0 netmask 255.255.255.248 {
-    range dynamic-bootp 10.33.30.1 10.33.30.5;
-    option broadcast-address 10.33.30.7;
-    option routers 10.33.30.6;
+# VLAN 10.33.30.0/29
+$Scope3 = @{
+    Name = "VLAN10.33.30.0"
+    Subnet = "10.33.30.0"
+    Mask = "255.255.255.248"
+    StartRange = "10.33.30.1"
+    EndRange = "10.33.30.5"
+    Router = "10.33.30.6"
+    Broadcast = "10.33.30.7"
 }
+
+# Function to add DHCP Scope
+function Add-DHCPRange {
+    param (
+        $Scope
+    )
+    
+    # Add the DHCP Scope
+    Add-DhcpServerv4Scope -Name $Scope.Name -StartRange $Scope.StartRange -EndRange $Scope.EndRange -SubnetMask $Scope.Mask -State Active
+    
+    # Set the scope options
+    Set-DhcpServerv4OptionValue -ScopeId $Scope.Subnet -DnsDomain $DomainName -DnsServer $DNSServer -Router $Scope.Router
+    Set-DhcpServerv4Scope -ScopeId $Scope.Subnet -LeaseDuration ([TimeSpan]::FromSeconds($LeaseTime)) -MaxLeaseDuration ([TimeSpan]::FromSeconds($MaxLeaseTime))
+}
+
+# Add scopes
+Add-DHCPRange -Scope $Scope1
+Add-DHCPRange -Scope $Scope2
+Add-DHCPRange -cope $Scope3
+
+Write-Host "DHCP configuration completed."
 ```
